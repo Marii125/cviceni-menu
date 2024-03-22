@@ -43,3 +43,53 @@ a:hover {
 	- 640px
 	- 1000px
 */
+
+
+
+/* .hlavicka {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+} */
+
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  margin-bottom: 2px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+
+
+
+@media (min-width: 640px) {
+  .hlavicka {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  ul {
+    display: flex;
+  }
+
+  ul li {
+    flex-basis: calc(100% / 4);
+    margin-left: 2px;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .hlavicka {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
